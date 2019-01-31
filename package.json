@@ -1,0 +1,9 @@
+{
+  "name": "verify-image-palette",
+  "version": "1.0.0",
+  "description": "Verify that all colors in an image conform to a given color palette.",
+  "main": "index.js",
+  "repository": "https://github.com/iwolterstorff/verify-image-palette.git",
+  "author": "Ian Wolterstorff <wolterstorff.i@husky.neu.edu>",
+  "license": "MIT"
+}
