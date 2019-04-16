@@ -2,12 +2,22 @@
   "name": "verify-image-palette",
   "version": "1.0.0",
   "description": "Verify that all colors in an image conform to a given color palette.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": "https://github.com/iwolterstorff/verify-image-palette.git",
   "author": "Ian Wolterstorff <wolterstorff.i@husky.neu.edu>",
   "license": "MIT",
   "dependencies": {
     "anypalette": "^0.1.0",
-    "get-pixels": "^3.3.2"
+    "get-pixels": "^3.3.2",
+    "ndarray": "^1.0.18"
+  },
+  "devDependencies": {
+    "@types/ndarray": "^1.0.7",
+    "@types/node": "^11.13.4",
+    "typescript": "^3.4.3"
   }
 }
