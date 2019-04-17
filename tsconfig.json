@@ -11,6 +11,7 @@
         "noFallthroughCasesInSwitch": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
+        "alwaysStrict": true,
         "esModuleInterop": true
     },
     "include": [

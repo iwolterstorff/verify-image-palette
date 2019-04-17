@@ -1,5 +1,3 @@
-'use strict';
-
 import * as AnyPalette from 'anypalette';
 import getPixels from 'get-pixels';
 import ndarray from 'ndarray';
