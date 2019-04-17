@@ -3,7 +3,7 @@
 import * as AnyPalette from 'anypalette';
 import getPixels from 'get-pixels';
 import ndarray from 'ndarray';
-import {promisify} from 'util';
+import { promisify } from 'util';
 
 async function verifyImage(imagePath: string, palettePath: string): Promise<boolean> {
     const pGetPixels: Function = promisify(getPixels);
