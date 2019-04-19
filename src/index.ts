@@ -3,7 +3,7 @@ import getPixels from 'get-pixels';
 import ndarray from 'ndarray';
 import { promisify } from 'util';
 
-async function verifyImage(imagePath: string, palettePath: string): Promise<boolean> {
+export default async function verifyImage(imagePath: string, palettePath: string): Promise<boolean> {
     const pGetPixels: Function = promisify(getPixels);
     const pLoadPalette: Function = promisify(AnyPalette.loadPalette);
 
@@ -22,5 +22,3 @@ async function verifyImage(imagePath: string, palettePath: string): Promise<bool
     }
     return pixs.every((color: AnyPalette.Color) => palette.includes(color));
 }
-
-module.exports.verifyImage = verifyImage;

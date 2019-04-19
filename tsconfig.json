@@ -1,7 +1,10 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "paths": { "*": ["types/*"] },
+        "paths": {
+            "source-map-support": ["node_modules/*"], 
+            "*": ["types/*"] 
+        },
         "outDir": "./dist",
         "declaration": true,
         "allowJs": false,
