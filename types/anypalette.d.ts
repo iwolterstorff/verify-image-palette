@@ -90,9 +90,9 @@ export class RandomPalette {
     toLocaleString(): any;
     unshift(p0: any): any;
 }
-export function loadPalette(options: AnyPalette.LoadPaletteOptions, callback: (error: Error, palette: Palette) => void): void;
-export function loadPalette(file: File, callback: (error: Error, palette: Palette) => void): void;
-export function loadPalette(filePath: string, callback: (error: Error, palette: Palette) => void): void;
+export function load(options: AnyPalette.LoadPaletteOptions, callback: (error: Error, palette: Palette) => void): void;
+export function load(file: File, callback: (error: Error, palette: Palette) => void): void;
+export function load(filePath: string, callback: (error: Error, palette: Palette) => void): void;
 
 declare namespace AnyPalette {
     export interface LoadPaletteOptions {

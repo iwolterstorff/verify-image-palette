@@ -1,11 +1,11 @@
-import * as AnyPalette from 'anypalette';
+import AnyPalette from 'anypalette';
 import getPixels from 'get-pixels';
 import ndarray from 'ndarray';
 import { promisify } from 'util';
 
 export default async function verifyImage(imagePath: string, palettePath: string): Promise<boolean> {
     const pGetPixels: Function = promisify(getPixels);
-    const pLoadPalette: Function = promisify(AnyPalette.loadPalette);
+    const pLoadPalette: Function = promisify(AnyPalette.load);
 
     const palette: AnyPalette.Palette = await pLoadPalette(palettePath);
     const image: ndarray = await pGetPixels(imagePath);
